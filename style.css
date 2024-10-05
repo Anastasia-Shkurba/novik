@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+
+  menu {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: #828282;
+      font-size: 18px;
+    }
+
+    margin: 25px 0 25px 0;
+  }
+
+  hr {
+    margin: auto;
+    max-width: 970px;
+  }
+}
+
+.first-screen {
+  max-width: 970px;
+  margin: auto;
+  
+  h1 {
+    margin: 12px 0 50px;
+  }
+}
+
+.about-me {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 100px 0;
+
+  h2 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+}
+
+.stars {
+  li {
+    width: 26px;
+    height: 26px;
+    background-image: url(images/star-icon-light.svg);
+  }
+  &:is(.one, .two, .three, .four, .five)>:nth-child(1),
+  &:is(.two, .three, .four, .five)>:nth-child(2),
+  &:is(.three, .four, .five)>:nth-child(3),
+  &:is(.four, .five)>:nth-child(4),
+  &.five>:nth-child(5) {
+    background-image: url(images/star-icon-dark.svg);
+  }
+}
