@@ -2,6 +2,10 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+
+  p {
+    font-size: 18px;
+  }
 }
 
 li {
@@ -56,6 +60,49 @@ header {
   }
 }
 
+.skills {
+  padding: 100px 0;
+  text-align: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 34px;
+  }
+
+  p {
+    margin: 20px 0 50px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+    &.skill-list-apps {
+      gap: 97px;
+
+      >li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        h4 {
+          height: 37px;
+          font-size: 14px;
+          color: #828282;
+          font-weight: bold;
+          margin: 25px 0 60px;
+        }
+
+        >ul{
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+
 .stars {
   li {
     width: 26px;
@@ -70,3 +117,26 @@ header {
     background-image: url(images/star-icon-dark.svg);
   }
 }
+
+.portfolio {
+  padding: 100px 0 30px;
+  text-align: center;
+  background-color: #F6F6F6;
+
+  h2 {
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 50px;
+  }
+
+  figcaption {
+    margin: 40px 0 70px;
+    font-size: 18px;
+    font-weight: 400;
+
+    a {
+      color: #070707;
+    }
+  }
+}
+
